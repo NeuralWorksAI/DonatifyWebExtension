@@ -1,11 +1,12 @@
+import login from './login.js';
+
 document.getElementById('login').addEventListener('click', function (e) {
-    alert('Welcome!!');
+   
     var usernameValue = document.getElementById('username');
     var passwordValue = document.getElementById('password');
-    alert('Welcome ' + usernameValue.value + '!');
-    alert('Your password is ' + passwordValue.value + '!');
+    alert('You signed in!');
 
-    //loging here
+ login(usernameValue.value, passwordValue.value);
     
 
 
